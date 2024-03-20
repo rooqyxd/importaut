@@ -1,0 +1,86 @@
+.whyus-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    padding: 2em 0;
+    background-color: #f5f5f5;
+    color: #284468;
+    font-family: "CedarvilleCursive";
+    font-size: 1.5rem;
+    text-align: center;
+}
+.whyus-container {
+    width: 80%;
+}
+.whyus-content-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    display: flex;
+    gap: 2.5em;
+}
+.whyus-content {
+    transition: transform 1s;
+    width: 30%;
+}
+.whyus-content:hover {
+    transform: scale(1.1);
+}
+.whyus-content-icon {
+    font-size: 3rem;
+    color: #cc6f5e;
+}
+.whyus-content-text {
+    margin-top: 1em;
+}
+.topbar {
+    width: 70%;
+    height: 2px;
+    /* background-color: #284468; */
+    background-color: #cc6f5e;
+    margin: 2em auto 3em;
+}
+
+@media screen and (max-width: 1250px) {
+    .whyus-wrapper {
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 850px) {
+    .whyus-wrapper {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 740px) {
+    .whyus-wrapper {
+        font-size: 1.2rem;
+    }
+    .whyus-content-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+        flex-direction: column;
+    }
+    .whyus-content {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .whyus-wrapper {
+        font-size: 1.2rem;
+    }
+    .whyus-content-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+        flex-direction: column;
+    }
+    .whyus-content {
+        width: 80%;
+    }
+}

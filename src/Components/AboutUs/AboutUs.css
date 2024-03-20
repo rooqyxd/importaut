@@ -16,10 +16,13 @@
     position: relative;
     overflow: hidden;
     padding-top: 3em;
+    height: 30%;
 }
 
 .aboutus-img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -50,7 +53,7 @@
 }
 @media screen and (max-width: 900px) {
     .aboutus-text {
-        font-size: 0.9em;
+        font-size: 1em;
         width: 45%;
     }
     .aboutus-image-container {
@@ -60,30 +63,41 @@
 @media screen and (max-width: 700px) {
     .aboutus-text {
         width: 50%;
-        font-size: 0.7em;
+        font-size: 0.85em;
+        margin-top: 2em;
+    }
+    .aboutus-image-container {
+        height: 70vh; /* Adjust as needed */
     }
 }
 @media screen and (max-width: 500px) {
     .aboutus-text {
         width: 52%;
         margin-top: 2em;
-        font-size: 0.6em;
+        font-size: 0.85em;
     }
     .aboutus-image-container {
         padding-top: 5em;
     }
+    
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 440px) {
     .aboutus-text {
-        width: 65%;
-        margin-top: 3.5em;
-        font-size: 0.55em;
+        width: 100%;
+        margin-top: 2.5em;
+        font-size: 1.1em;
+    }
+    .aboutus-img {
+        width: 100%;
+        height: 150%;
+    }
+    .aboutus-image-container {
+        height: 80vh; /* Adjust as needed */
     }
 }
 @media screen and (max-width: 300px) {
     .aboutus-text {
-        width: 75%;
         margin-top: 4.5em;
-        font-size: 0.5em;
+        font-size: 0.8em;
     }
 }
