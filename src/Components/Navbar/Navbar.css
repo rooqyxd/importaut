@@ -43,12 +43,12 @@
     border-radius: 50%;
 }
 .title-one {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-family: "CedarvilleCursive";
     color: #284468;
 }
 .title-two {
-    font-size: 1em;
+    font-size: 1rem;
     font-family: "CedarvilleCursive";
     color: #284468;
 }
@@ -74,7 +74,7 @@
     align-items: center;
     text-decoration: none;
     color: #000;
-    font-size: 16px;
+    font-size: 1rem;
     padding: 0.5em 1em;
     border-radius: 5px;
     transition: background-color 0.3s, text-decoration 0.3s, color 0.3s;
@@ -85,7 +85,7 @@
     background-color: #f1eee9;
 }
 .navbar-text {
-    font-size: 1em;
+    font-size: 1rem;
     margin: 0 0.4em;
     color: #284468;
     /* font-weight: bold; */
@@ -111,9 +111,7 @@
 .full-screen-menu.active {
     transform: translateX(0);
 }
-.textbig {
-    font-size: 5em;
-}
+
 .fullscreen-link-cont {
     display: flex;
     flex-direction: column;
@@ -126,7 +124,7 @@
     align-items: center;
     text-decoration: none;
     color: #fff;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     padding: 0.5em 1em;
     border-radius: 5px;
     gap: 0.5em;
@@ -137,16 +135,33 @@
     text-decoration: underline;
     background-color: #f1eee9;
 }
+@media (max-width: 1120px) {
+    .navbar{
+        width: 100%;
+    }
+    .navbar-left {
+        margin-left: 1em;
+    }
+    .title-one {
+        font-size: 1.1rem;
+    }
+    .title-two {
+        font-size: 0.8rem;
+    }
+    .navbar-link {
+        font-size: 1rem;
+    }
+}
 @media (max-width: 870px) {
     .navbar-link {
-        font-size: 0.9em;
+        font-size: 0.9rem;
         font-weight: bold;
     }
     .title-one {
-        font-size: 1em;
+        font-size: 1rem;
     }
     .title-two {
-        font-size: 0.8em;
+        font-size: 0.8rem;
     }
     .navbar-logo img {
         height: 70px;
@@ -155,14 +170,14 @@
 }
 @media (max-width: 630px) {
     .navbar-link {
-        font-size: 0.6em;
+        font-size: 0.6rem;
         font-weight: bold;
     }
     .title-one {
-        font-size: 0.8em;
+        font-size: 0.8rem;
     }
     .title-two {
-        font-size: 0.76em;
+        font-size: 0.76rem;
     }
 }
 @media screen and (max-width: 740px) {
@@ -170,10 +185,10 @@
         display: none;
     }
     .title-one {
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
     .title-two {
-        font-size: 1.3em;
+        font-size: 1.3rem;
     }
     .burger-menu {
         display: block;
@@ -185,12 +200,12 @@
     .burger-white {
         transition: color 0.5s;
         color: #fff;
-        font-size: 1.3em;
+        font-size: 1.3rem;
     }
     .burger-black {
         transition: color 0.5s;
         color: #284468;
-        font-size: 1.3em;
+        font-size: 1.3rem;
     }
     .full-screen-menu {
         display: absolute;
@@ -207,7 +222,7 @@
         align-items: center;
         text-decoration: none;
         color: #fff;
-        font-size: 1.5em;
+        font-size: 1.5rem;
         padding: 0.5em 1em;
         border-radius: 5px;
         gap: 0.5em;
@@ -221,9 +236,9 @@
 }
 @media screen and (max-width: 440px) {
     .title-one {
-        font-size: 0.8em;
+        font-size: 0.8rem;
     }
     .title-two {
-        font-size: 0.6em;
+        font-size: 0.6rem;
     }
 }
