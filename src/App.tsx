@@ -8,9 +8,6 @@ function App() {
         <>
             <Navbar />
             <AboutUs />
-            <Faq />
-            <Faq />
-            <Faq />
         </>
     );
 }
