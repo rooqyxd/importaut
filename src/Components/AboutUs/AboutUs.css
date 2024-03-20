@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "Roboto";
+    src: local("Roboto"), url("./Roboto-Regular.ttf") format("truetype");
+}
+
+.aboutus-img {
+    display: block;
+    width: 100%;
+}
+.aboutus-image-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 3em;
+}
+
+.aboutus-img {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aboutus-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    justify-content: center;
+    text-align: justify;
+    font-size: 1.3em;
+    line-height: 1.5;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.8); /* Black background with 50% opacity */
+    color: white; /* White text */
+    padding: 1em; /* Add some padding around the text */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add a shadow to the text */
+}
+@media screen and (max-width: 1050px) {
+    .aboutus-text {
+        font-size: 1.1em;
+    }
+}
+@media screen and (max-width: 900px) {
+    .aboutus-text {
+        font-size: 0.9em;
+        width: 45%;
+    }
+    .aboutus-image-container {
+        padding-top: 4em;
+    }
+}
+@media screen and (max-width: 700px) {
+    .aboutus-text {
+        width: 50%;
+        font-size: 0.7em;
+    }
+}
+@media screen and (max-width: 500px) {
+    .aboutus-text {
+        width: 52%;
+        margin-top: 2em;
+        font-size: 0.6em;
+    }
+    .aboutus-image-container {
+        padding-top: 5em;
+    }
+}
+@media screen and (max-width: 400px) {
+    .aboutus-text {
+        width: 65%;
+        margin-top: 3.5em;
+        font-size: 0.55em;
+    }
+}
+@media screen and (max-width: 300px) {
+    .aboutus-text {
+        width: 75%;
+        margin-top: 4.5em;
+        font-size: 0.5em;
+    }
+}
