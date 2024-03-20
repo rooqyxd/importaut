@@ -9,7 +9,7 @@
 }
 
 .navbar-wrapper {
-    width: 100vw;
+    width: 100%;
 
     position: fixed;
     top: 0;
@@ -19,22 +19,20 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     background-color: #fff;
     padding-top: 0.5em;
-  
 }
-.navbar-container{
+.navbar-container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .navbar {
-
     width: 80%;
     display: flex;
     /* background-color: red; */
     justify-content: space-between;
     align-items: center;
 }
-.navbar-left{
+.navbar-left {
     margin-left: 3em;
 }
 .navbar-logo {
