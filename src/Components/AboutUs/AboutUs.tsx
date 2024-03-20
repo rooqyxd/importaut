@@ -5,7 +5,7 @@ const AboutUs = () => {
         <>
             <div className="aboutus-container">
                 <div className="aboutus-image-container">
-                    <img src={carimg} alt="image with cars" className="aboutus-img" />
+                    <img src={carimg} alt="image with cars from usa" className="aboutus-img" />
                     <span className="aboutus-text">
                         Jeżeli szukasz wyjątkowego pojazdu, który wyróżni Cię z tłumu i dostarczy
                         niezapomnianych wrażeń za kierownicą, to import aut z USA jest idealnym
