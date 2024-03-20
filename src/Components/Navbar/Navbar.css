@@ -195,7 +195,7 @@
 
         margin-right: 1.5em;
         z-index: 100;
-        background-color: red;
+        /* background-color: red; */
     }
     .burger-white {
         transition: color 0.5s;
