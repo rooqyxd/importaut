@@ -2,6 +2,11 @@
     font-family: "Roboto";
     src: local("Roboto"), url("./Roboto-Regular.ttf") format("truetype");
 }
+@font-face {
+    font-family: "CedarvilleCursive";
+    src: local("CedarvilleCursive"),
+        url("/src/assets/fonts/CedarvilleCursive/Lobster-Regular.ttf") format("truetype");
+}
 
 .aboutus-img {
     display: block;

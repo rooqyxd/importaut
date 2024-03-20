@@ -7,6 +7,7 @@ import {
 } from "react-icons/bs";
 import "./Navbar.css";
 import { useState, MouseEvent, useEffect } from "react";
+import logo from "../../assets/conslogo.jpg";
 const Navbar = () => {
     const [burgerMenu, setBurgerMenu] = useState(false);
     const [fullScreenMenu, setFullScreenMenu] = useState(false);
@@ -58,7 +59,7 @@ const Navbar = () => {
                             style={{ cursor: "pointer" }}
                         >
                             <a href="#home">
-                                <img src="./../conslogo.jpg" alt="logo" className="navlogo" />
+                                <img src={logo} alt="logo" className="navlogo" />
                             </a>
                             <div className="title-container">
                                 <h1 className="title-one">
