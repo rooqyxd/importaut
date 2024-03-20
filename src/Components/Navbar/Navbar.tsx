@@ -49,7 +49,7 @@ const Navbar = () => {
     }, []);
     return (
         <div className="navbar-wrapper">
-            <div className="container">
+            <div className="navbar-container">
                 <div className="navbar">
                     <div className="navbar-left">
                         <div
