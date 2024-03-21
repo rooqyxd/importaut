@@ -11,6 +11,17 @@ const WhyUs = () => {
                 <div className="whyus-content-container">
                     <div className="whyus-content">
                         <div className="whyus-content-icon">
+                            <BsWrench />
+                        </div>
+                        <h2 className="whyus-content-title">Wsparcie posprzedażowe</h2>
+                        <p className="whyus-content-text">
+                            Oferujemy kompleksowe wsparcie posprzedażowe, w tym pomoc w rejestracji
+                            pojazdu, serwisie, a także doradztwo w zakresie eksploatacji i
+                            utrzymania samochodu.
+                        </p>
+                    </div>
+                    <div className="whyus-content">
+                        <div className="whyus-content-icon">
                             <BsStopwatch />
                         </div>
                         <h2 className="whyus-content-title">Doświadczenie</h2>
@@ -19,17 +30,6 @@ const WhyUs = () => {
                             nie tylko bogatą wiedzę na temat procedur celnych, ale także doradztwo w
                             wyborze najlepszego samochodu dostosowanego do indywidualnych potrzeb
                             klienta.
-                        </p>
-                    </div>
-                    <div className="whyus-content">
-                        <div className="whyus-content-icon">
-                            <BsWrench />
-                        </div>
-                        <h2 className="whyus-content-title">Wsparcie posprzedażowe</h2>
-                        <p className="whyus-content-text">
-                            Oferujemy kompleksowe wsparcie posprzedażowe, w tym pomoc w rejestracji
-                            pojazdu, serwisie, a także doradztwo w zakresie eksploatacji i
-                            utrzymania samochodu.
                         </p>
                     </div>
                     <div className="whyus-content">
