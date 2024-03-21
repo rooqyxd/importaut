@@ -32,11 +32,11 @@ const faqs: Faqs[] = [
         text: "Każde zamówienie wyceniamy indywidualnie na podstawie marki, rocznika, modelu auta jak i samego uszkodzenia.",
     },
     {
-        title: "Czy sciagniete auto będzie przystosowane do standardów europejskich?",
+        title: "Czy ściągniete auto będzie przystosowane do standardów europejskich?",
         text: "Oczywiście na zyczenie klienta doprowadzamy auto do pełnych standardow EU.",
     },
     {
-        title: "Co jeszcze oprocz AUT można importowac z USA?",
+        title: "Co jeszcze, prócz AUT można importować z USA?",
         text: "Z USA możemy kupic praktycznie każdy pojazd od Łodzi, motocykle po sprzęty budowlane.",
     },
     {
