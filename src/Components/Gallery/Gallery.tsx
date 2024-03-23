@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import { Lightbox } from "react-modal-image";
@@ -23,7 +23,9 @@ declare module "react-modal-image" {
 const Gallery = () => {
     const [lightboxOpen, setLightboxOpen] = useState(false);
     const [selectedImage, setSelectedImage] = useState(images[0]);
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
+    const carouselWidth = windowWidth < 768 ? "80%" : "50%";
     const handleImageClick = (index: number) => {
         setSelectedImage(images[index]);
         setLightboxOpen(true);
@@ -31,6 +33,14 @@ const Gallery = () => {
     const handleCloseImage = () => {
         setLightboxOpen(false);
     };
+    useEffect(() => {
+        const handleResize = () => setWindowWidth(window.innerWidth);
+        window.addEventListener("resize", handleResize);
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+
     return (
         <div id="gallery">
             <div className="topbar"></div>
@@ -41,7 +51,7 @@ const Gallery = () => {
             <div className="carousel-wrapper">
                 <Carousel
                     onClickItem={handleImageClick}
-                    width="50%"
+                    width={carouselWidth}
                     className="carousel-container"
                     showThumbs={false}
                     dynamicHeight={true}
