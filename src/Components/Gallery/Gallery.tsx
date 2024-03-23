@@ -18,7 +18,6 @@ const images: string[] = [img1, img2, img3, img4, img5, img6, img7, img8, img9, 
 declare module "react-modal-image" {
     export interface ModalImageProps {
         onClose?: () => void; // Assuming onClose is optional
-        small?: string | undefined;
     }
 }
 const Gallery = () => {
@@ -53,7 +52,13 @@ const Gallery = () => {
                         </div>
                     ))}
                 </Carousel>
-                {lightboxOpen && <Lightbox large={selectedImage} onClose={handleCloseImage} />}
+                {lightboxOpen && (
+                    <Lightbox
+                        small={selectedImage}
+                        large={selectedImage}
+                        onClose={handleCloseImage}
+                    />
+                )}
             </div>
         </div>
     );
