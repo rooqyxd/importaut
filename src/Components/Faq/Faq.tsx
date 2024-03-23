@@ -25,7 +25,7 @@ const faqs: Faqs[] = [
     },
     {
         title: "Dlaczego warto ściągnąć auto z USA?",
-        text: "Nawet najmniejsze uszkodzenie  obniża wartość pojazdu w USA. Biorąc pod uwagę koszty naprawy i doprowadzenie samochodu do stanu uzytecznosci, można znacząco zwiększyć jego wartość i finalnie auto wychodzi znacznie taniej niz w Polsce.",
+        text: "Nawet najmniejsze uszkodzenie  obniża wartość pojazdu w USA. Biorąc pod uwagę koszty naprawy i doprowadzenie samochodu do stanu uzytecznosci, można znacząco zwiększyć jego wartość i finalnie auto wychodzi znacznie taniej niż w Polsce.",
     },
     {
         title: "Jak wygląda wycena auta?",
@@ -33,7 +33,7 @@ const faqs: Faqs[] = [
     },
     {
         title: "Czy ściągniete auto będzie przystosowane do standardów europejskich?",
-        text: "Oczywiście na zyczenie klienta doprowadzamy auto do pełnych standardow EU.",
+        text: "Oczywiście na życzenie klienta doprowadzamy auto do pełnych standardow EU.",
     },
     {
         title: "Co jeszcze, prócz AUT można importować z USA?",
@@ -54,8 +54,10 @@ const Faq = () => {
     return (
         <div className="faq-wrapper">
             <div className="faq-container">
+            <div className="topbar"></div>
                 <div id="services">
                     <div className="accordion">
+                    <h1 className="faq-title">Najcześciej zadawane pytania</h1>
                         {faqs.map((el, i) => {
                             const isOpen = i === curOpen;
                             return (

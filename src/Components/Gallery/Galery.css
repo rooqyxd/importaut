@@ -1,0 +1,55 @@
+.carousel-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    margin-top: 5em;
+}
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.carousel-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-top: 5em;
+    text-align: center;
+    width: 100%;
+    font-family: "CedarvilleCursive", sans-serif;
+    color: #284468;
+}
+.carousel-container-img {
+    width: 100%; /* Ensure the image takes the full width of its container */
+    height: 500px; /* Define a fixed height for the images */
+    object-fit: contain; /* Scale the image to maintain its aspect ratio without cropping */
+    background-color: rgba(0, 0, 0, 0.15); /* Add a box shadow */
+}
+.carousel .thumbs-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+
+.carousel .control-arrow {
+    width: 3em;
+}
+.carousel-wrapper .carousel-container {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .carousel-wrapper .carousel-container {
+        width: 100%;
+    }
+    .carousel .thumbs-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+    }
+}
