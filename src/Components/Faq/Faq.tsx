@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import autoAnimate from "@formkit/auto-animate";
 import "./Faq.css";
 type Faqs = {
     title: string;
@@ -51,26 +52,26 @@ const Faq = () => {
     const handleToggle = (num: number) => {
         setCurOpen(curOpen === num ? null : num);
     };
+
     return (
-        <div className="faq-wrapper">
-            <div className="faq-container">
-            <div className="topbar"></div>
-                <div id="services">
-                    <div className="accordion">
-                    <h1 className="faq-title">Najcześciej zadawane pytania</h1>
-                        {faqs.map((el, i) => {
-                            const isOpen = i === curOpen;
-                            return (
-                                <div
-                                    key={el.title}
-                                    className={`item ${isOpen ? "open" : ""}`}
-                                    onClick={() => handleToggle(i)}
-                                >
-                                    <p className="number">{i < 9 ? `0${i + 1}` : i + 1}</p>
-                                    <p className="title">{el.title}</p>
-                                    <p className="icon">{isOpen ? "-" : "+"}</p>
-                                    {isOpen && (
-                                        <div className="content-box">
+        <>
+            <div className="faq-wrapper">
+                <div className="faq-container">
+                    <div id="services">
+                        <div className="accordion">
+                            <h1 className="faq-title">Najcześciej zadawane pytania</h1>
+                            {faqs.map((el, i) => {
+                                const isOpen = i === curOpen;
+                                return (
+                                    <div
+                                        key={el.title}
+                                        className={`item ${isOpen ? "open" : ""}`}
+                                        onClick={() => handleToggle(i)}
+                                    >
+                                        <p className="number">{i < 9 ? `0${i + 1}` : i + 1}</p>
+                                        <p className="title">{el.title}</p>
+                                        <p className="icon">{isOpen ? "-" : "+"}</p>
+                                        <div className={`content-box ${isOpen ? "opened" : ""}`}>
                                             {Array.isArray(el.text) ? (
                                                 el.text.map((line, index) => (
                                                     <div key={index}>{line}</div>
@@ -79,14 +80,14 @@ const Faq = () => {
                                                 <p>{el.text}</p>
                                             )}
                                         </div>
-                                    )}
-                                </div>
-                            );
-                        })}
+                                    </div>
+                                );
+                            })}
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 export default Faq;

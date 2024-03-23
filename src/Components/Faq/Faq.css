@@ -60,8 +60,16 @@
     padding-bottom: 16px;
     line-height: 1.5;
     font-size: 1.2rem;
-}
+    max-height: 0;
+    overflow: hidden;
 
+    transition: max-height 0.2s ease-in;
+    margin: 0;
+    padding: 0;
+}
+.content-box.opened {
+    max-height: 350px;
+}
 /* .content-box ul {
     color: #868e96;
     margin-left: 16px;
@@ -74,11 +82,13 @@
 
 .open {
     border-top: 4px solid #cc6f5e;
+    transition: border-top 0.3s;
 }
 
 .open .number,
 .open .title {
     color: #cc6f5e;
+    transition: color 0.3s;
 }
 @media screen and (max-width: 1250px) {
     .faq-wrapper {
