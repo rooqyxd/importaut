@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import Lightbox  from "react-modal-image";
+import { Lightbox } from "react-modal-image";
 import "./Galery.css";
 import img1 from "../../assets/car-images/Image1.jpeg";
 import img2 from "../../assets/car-images/Image2.jpeg";
@@ -18,6 +18,7 @@ const images: string[] = [img1, img2, img3, img4, img5, img6, img7, img8, img9, 
 declare module "react-modal-image" {
     export interface ModalImageProps {
         onClose?: () => void; // Assuming onClose is optional
+        small?: string;
     }
 }
 const Gallery = () => {
@@ -52,9 +53,7 @@ const Gallery = () => {
                         </div>
                     ))}
                 </Carousel>
-                {lightboxOpen && (
-                    <Lightbox small="" large={selectedImage} onClose={handleCloseImage} />
-                )}
+                {lightboxOpen && <Lightbox large={selectedImage} onClose={handleCloseImage} />}
             </div>
         </div>
     );
