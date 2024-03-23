@@ -25,7 +25,7 @@ const Gallery = () => {
     const [selectedImage, setSelectedImage] = useState(images[0]);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-    const carouselWidth = windowWidth < 768 ? "80%" : "50%";
+    const carouselWidth = windowWidth < 768 ? "90%" : "50%";
     const handleImageClick = (index: number) => {
         setSelectedImage(images[index]);
         setLightboxOpen(true);
