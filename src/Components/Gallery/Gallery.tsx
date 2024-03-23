@@ -31,7 +31,7 @@ const Gallery = () => {
         <div id="gallery">
             <div className="topbar"></div>
 
-            <div className="carousel-title-container" >
+            <div className="carousel-title-container">
                 <h1 className="carousel-title">Sprowadzone auta</h1>
             </div>
             <div className="carousel-wrapper">
@@ -48,7 +48,9 @@ const Gallery = () => {
                         </div>
                     ))}
                 </Carousel>
-                {lightboxOpen && <Lightbox large={selectedImage} onClose={handleCloseImage} />}
+                {lightboxOpen && (
+                    <Lightbox small="" large={selectedImage} onClose={handleCloseImage} />
+                )}
             </div>
         </div>
     );
