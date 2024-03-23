@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from "react";
-import autoAnimate from "@formkit/auto-animate";
+import { useState } from "react";
+
 import "./Faq.css";
 type Faqs = {
     title: string;
