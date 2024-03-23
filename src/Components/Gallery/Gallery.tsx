@@ -44,6 +44,7 @@ const Gallery = () => {
                     width="50%"
                     className="carousel-container"
                     showThumbs={false}
+                    dynamicHeight={true}
                     emulateTouch={true}
                 >
                     {images.map((src, index) => (
