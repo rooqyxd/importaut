@@ -3,7 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 import { Lightbox } from "react-modal-image";
 import "./Galery.css";
-import img1 from "../../assets/car-images/Image1.jpeg";
+// import img1 from "../../assets/car-images/Image1.jpeg";
 import img2 from "../../assets/car-images/Image2.jpeg";
 import img3 from "../../assets/car-images/Image3.jpeg";
 import img4 from "../../assets/car-images/Image4.jpeg";
@@ -14,7 +14,7 @@ import img8 from "../../assets/car-images/Image8.jpeg";
 import img9 from "../../assets/car-images/Image9.jpeg";
 import img10 from "../../assets/car-images/Image10.jpeg";
 
-const images: string[] = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
+const images: string[] = [img2, img3, img4, img5, img6, img7, img8, img9, img10];
 declare module "react-modal-image" {
     export interface ModalImageProps {
         onClose?: () => void; // Assuming onClose is optional
