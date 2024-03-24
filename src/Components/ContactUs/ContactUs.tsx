@@ -73,13 +73,13 @@ const ContactUs = () => {
                 <div className="contact-wrapper">
                     <form ref={form} onSubmit={sendEmail} className="contact-form">
                         <label>Imię:</label>
-                        <input type="text" name="user_name" />
+                        <input type="text" name="user_name" required />
                         <label>Email:</label>
-                        <input type="email" name="user_email" />
+                        <input type="email" name="user_email" required />
                         <label>Numer telefonu:</label>
-                        <input type="number" name="user_number" />
+                        <input type="number" name="user_number" required />
                         <label>Wiadomość:</label>
-                        <textarea name="message" />
+                        <textarea name="message" required />
                         <button
                             type="submit"
                             className={`contact-button ${isSent && "sending-color"}`}
