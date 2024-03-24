@@ -1,0 +1,142 @@
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3em;
+    width: 100%; /* Ensure it spans the full width */
+    color: black;
+}
+.contact-title {
+    margin: 1em auto 1em;
+    font-family: "CedarvilleCursive", sans-serif;
+    color: #284468;
+    font-size: 3rem;
+    text-align: center;
+}
+.info-wrapper {
+    position: relative;
+    display: flex;
+    background-color: #fff;
+    border-radius: 15px;
+    background-image: url("./formbgc4.jpg");
+    z-index: 1;
+    padding: 3em 5em;
+}
+.info-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    border-radius: 15px;
+}
+label {
+    color: #f5f5f5;
+
+    font-size: 1.3rem;
+}
+input,
+label,
+textarea,
+button {
+    z-index: 10;
+}
+textarea {
+    resize: vertical;
+}
+.contact-button {
+    padding: 0.8em 2em;
+    border: 1px solid #3f3f3f;
+    border-radius: 5px;
+    text-align: center;
+}
+.contact-button:hover {
+    background-color: #d8ddd9;
+    color: black;
+}
+.button-text-sending,
+.button-text-sent {
+    font-size: 1rem;
+}
+.button-text-sent {
+    color: black;
+}
+.sending-color {
+    background-color: #08cc39;
+    font-weight: bold;
+}
+.button-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* optional: add some space between the text and the spinner */
+}
+.company-info {
+    flex-grow: 1; /* Added so it takes up the space it needs based on its content */
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 0 0 15px;
+    gap: 1em;
+}
+.company-info-title,
+.company-info-text {
+    color: #f5f5f5;
+    z-index: 1000;
+    font-size: 1.3rem;
+}
+.company-info-text-contact {
+    text-decoration: none;
+    color: #f5f5f5;
+}
+.company-info-text-contact-info {
+    margin-left: 0.3em;
+}
+.contact-form {
+    flex-grow: 1; /* Added so it takes up the rest of the space in the .info-wrapper */
+    display: flex;
+    flex-direction: column;
+    padding: 3em 6em 6em 6em;
+    /* background-color: blue; */
+    background-size: cover;
+    background-position: center;
+    /* This ensures the text stands out against the pattern */
+    color: #333;
+    /* background-color: red; */
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 1em;
+    width: 100%;
+    padding: 1em 3em;
+    color: #08cc39;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .info-wrapper {
+        flex-direction: column;
+    }
+
+    .company-info,
+    .contact-form {
+        padding: 2em; /* Adjust padding for smaller screens */
+        flex-grow: 0; /* Reset flex-grow for stacked layout */
+    }
+    .company-info {
+        border-radius: 15px;
+    }
+}

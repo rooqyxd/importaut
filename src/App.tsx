@@ -4,7 +4,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import WhyUs from "./Components/WhyUs/WhyUs";
 import Faq from "./Components/Faq/Faq";
 import Gallery from "./Components/Gallery/Gallery";
-import Contact from "./Components/Contact/Contact";
+import ContactUs from "./Components/ContactUs/ContactUs";
 
 function App() {
     return (
@@ -14,7 +14,7 @@ function App() {
             <WhyUs />
             <Faq />
             <Gallery />
-            <Contact />
+            <ContactUs />
         </>
     );
 }
