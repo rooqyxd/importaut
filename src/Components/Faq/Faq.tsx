@@ -26,10 +26,10 @@ const faqs: Faqs[] = [
     },
     {
         title: "Dlaczego warto ściągnąć auto z USA?",
-        text: "Nawet najmniejsze uszkodzenie  obniża wartość pojazdu w USA. Biorąc pod uwagę koszty naprawy i doprowadzenie samochodu do stanu uzytecznosci, można znacząco zwiększyć jego wartość i finalnie auto wychodzi znacznie taniej niż w Polsce.",
+        text: "Nawet najmniejsze uszkodzenie  obniża wartość pojazdu w USA. Biorąc pod uwagę koszty naprawy i doprowadzenie samochodu do stanu użytecznosci, można znacząco zwiększyć jego wartość i finalnie auto wychodzi znacznie taniej niż w Polsce.",
     },
     {
-        title: "Jak wygląda wycena auta?",
+        title: "Jak wygląda wycena auta?      ",
         text: "Każde zamówienie wyceniamy indywidualnie na podstawie marki, rocznika, modelu auta jak i samego uszkodzenia.",
     },
     {
@@ -38,7 +38,7 @@ const faqs: Faqs[] = [
     },
     {
         title: "Co jeszcze, prócz AUT można importować z USA?",
-        text: "Z USA możemy kupic praktycznie każdy pojazd od Łodzi, motocykle po sprzęty budowlane.",
+        text: "Z USA możemy kupic praktycznie każdy pojazd od Łodzi, motocykle, aż po sprzęty budowlane.",
     },
     {
         title: "Ile trwa cała procedura od importu do rejestracji?",
@@ -68,7 +68,7 @@ const Faq = () => {
                                         className={`item ${isOpen ? "open" : ""}`}
                                         onClick={() => handleToggle(i)}
                                     >
-                                        {/* <p className="number">{i < 9 ? `0${i + 1}` : i + 1}</p> */}
+                                        <p className="number">{i < 9 ? `0${i + 1}` : i + 1}</p>
                                         <p className="title">{el.title}</p>
                                         <p className="icon">{isOpen ? "-" : "+"}</p>
                                         <div className={`content-box ${isOpen ? "opened" : ""}`}>
@@ -77,7 +77,7 @@ const Faq = () => {
                                                     <div key={index}>{line}</div>
                                                 ))
                                             ) : (
-                                                <p>{el.text}</p>
+                                                <p className="texter">{el.text}</p>
                                             )}
                                         </div>
                                     </div>

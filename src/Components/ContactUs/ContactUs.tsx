@@ -40,7 +40,7 @@ const ContactUs = () => {
 
     return (
         <div className="contact-container" id="contact">
-               <div className="topbar"></div>
+            <div className="topbar"></div>
             <h1 className="contact-title">Kontakt</h1>
             <div className="info-wrapper">
                 <div className="company-info">
@@ -84,6 +84,7 @@ const ContactUs = () => {
                         <button
                             type="submit"
                             className={`contact-button ${isSent && "sending-color"}`}
+                            disabled={isSent}
                         >
                             {isSending ? (
                                 <div className="button-content">

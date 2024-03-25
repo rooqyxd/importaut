@@ -9,8 +9,8 @@
 .faq-wrapper::before {
     content: "";
     display: block;
-    height: 180px; /* Adjust this value to match your navbar's height */
-    margin-top: -120px; /* Adjust this value to match your navbar's height */
+    height: 180px;
+    margin-top: -120px;
     visibility: hidden;
 }
 .faq-container {
@@ -77,15 +77,6 @@
 .content-box.opened {
     max-height: 350px;
 }
-/* .content-box ul {
-    color: #868e96;
-    margin-left: 16px;
-    margin-top: 16px;
-
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-} */
 
 .open {
     border-top: 4px solid #cc6f5e;
@@ -97,6 +88,7 @@
     color: #cc6f5e;
     transition: color 0.3s;
 }
+
 @media screen and (max-width: 1250px) {
     .faq-wrapper {
         font-size: 1.1rem;
