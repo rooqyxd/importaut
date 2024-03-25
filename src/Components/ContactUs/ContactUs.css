@@ -4,8 +4,15 @@
     align-items: center;
     flex-direction: column;
     padding: 3em;
-    width: 100%; /* Ensure it spans the full width */
+    width: 100%; 
     color: black;
+}
+.contact-container:before {
+    content: "";
+    display: block;
+    height: 60px; 
+    margin-top: -80px; 
+    visibility: hidden;
 }
 .contact-title {
     margin: 1em auto 1em;

@@ -80,7 +80,7 @@
     transition: background-color 0.3s, text-decoration 0.3s, color 0.3s;
 }
 .navbar-link:hover {
-    color: #ad8d46;
+    color: #cc6f5e;
     text-decoration: underline;
     background-color: #f1eee9;
 }
@@ -131,7 +131,7 @@
     transition: background-color 0.3s, text-decoration 0.3s, color 0.3s;
 }
 .fullscreen-link:hover {
-    color: #ad8d46;
+    color: #cc6f5e;
     text-decoration: underline;
     background-color: #f1eee9;
 }

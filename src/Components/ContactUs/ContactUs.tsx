@@ -39,12 +39,13 @@ const ContactUs = () => {
     };
 
     return (
-        <div className="contact-container">
+        <div className="contact-container" id="contact">
+               <div className="topbar"></div>
             <h1 className="contact-title">Kontakt</h1>
-            <div className="info-wrapper" id="contact">
+            <div className="info-wrapper">
                 <div className="company-info">
                     <h2 className="company-info-title">
-                        <strong>Import Aut z Kanady i USA</strong>
+                        <strong>Import Aut z USA i Kanady</strong>
                     </h2>
                     <h2 className="company-info-title">
                         <strong>Mariusz Korolczuk</strong>

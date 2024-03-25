@@ -41,7 +41,7 @@ const faqs: Faqs[] = [
         text: "Z USA możemy kupic praktycznie każdy pojazd od Łodzi, motocykle po sprzęty budowlane.",
     },
     {
-        title: "Jak długo trwa cała procedura importu do rejestracji?",
+        title: "Ile trwa cała procedura od importu do rejestracji?",
         text: "2-3 miesiące, zależnie od Stanu w jakim zakupimy auto i uszkodzenia auta.",
     },
 ];
@@ -55,9 +55,9 @@ const Faq = () => {
 
     return (
         <>
-            <div className="faq-wrapper">
+            <div className="faq-wrapper" id="services">
                 <div className="faq-container">
-                    <div id="services">
+                    <div>
                         <div className="accordion">
                             <h1 className="faq-title">Najcześciej zadawane pytania</h1>
                             {faqs.map((el, i) => {
@@ -68,7 +68,7 @@ const Faq = () => {
                                         className={`item ${isOpen ? "open" : ""}`}
                                         onClick={() => handleToggle(i)}
                                     >
-                                        <p className="number">{i < 9 ? `0${i + 1}` : i + 1}</p>
+                                        {/* <p className="number">{i < 9 ? `0${i + 1}` : i + 1}</p> */}
                                         <p className="title">{el.title}</p>
                                         <p className="icon">{isOpen ? "-" : "+"}</p>
                                         <div className={`content-box ${isOpen ? "opened" : ""}`}>

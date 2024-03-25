@@ -99,7 +99,7 @@ const Navbar = () => {
                                         onClick={scrollToSection}
                                     >
                                         <BsFillCarFrontFill className="navbar-text" />
-                                        <span className="navbar-text">Usługi</span>
+                                        <span className="navbar-text">Faq</span>
                                     </a>
                                 </div>
                             </li>
@@ -154,7 +154,7 @@ const Navbar = () => {
                                         onClick={scrollToSection}
                                     >
                                         <BsFillCarFrontFill />
-                                        <span className="fullscreen-text">Usługi</span>
+                                        <span className="fullscreen-text">Faq</span>
                                     </a>
                                 </div>
                             </li>
