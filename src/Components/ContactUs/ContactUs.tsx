@@ -4,10 +4,11 @@ import "./ContactUs.css";
 import { ThreeDots } from "react-loader-spinner";
 import { BsFillTelephoneFill, BsBriefcaseFill } from "react-icons/bs";
 const ContactUs = () => {
-    const [isSending, setIsSending] = useState(false);
-    const [isSent, setIsSent] = useState(false);
+    const [isSending, setIsSending] = useState<boolean>(false);
+    const [isSent, setIsSent] = useState<boolean>(false);
+    const [errorMsg, setErrorMsg] = useState<string>("");
     const form = useRef<HTMLFormElement>(null);
-
+    const handleCloseError = () => setErrorMsg("");
     const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setIsSending(true);
@@ -33,6 +34,12 @@ const ContactUs = () => {
                     (error) => {
                         setIsSending(false);
                         console.log("FAILED...", error.text);
+                        setErrorMsg(
+                            "Wystąpił błąd podczas wysyłania wiadomości, skontaktuj się bezpośrednio lub spróbuj ponownie później.",
+                        );
+                        setTimeout(() => {
+                            setErrorMsg("");
+                        }, 5000);
                     },
                 );
         }
@@ -97,6 +104,16 @@ const ContactUs = () => {
                                 <span className="button-text-sending">Wyślij</span>
                             )}
                         </button>
+                        {errorMsg && (
+                            <div className="error-container">
+                                <div className="error-box">
+                                    <span className="error-msg">{errorMsg}</span>
+                                    <span className="error-btn" onClick={handleCloseError}>
+                                        X
+                                    </span>
+                                </div>
+                            </div>
+                        )}
                     </form>
                 </div>
             </div>

@@ -29,6 +29,7 @@
     background-image: url("../../assets/formbgc4.jpg");
     z-index: 1;
     padding: 3em 5em;
+    /* position: relative; */
 }
 .info-wrapper::before {
     content: "";
@@ -123,7 +124,47 @@ textarea {
 
     color: #333;
 }
+.error-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5555;
 
+    width: 60%;
+}
+.error-msg {
+    position: relative;
+    color: red;
+    font-weight: bold;
+    bottom: 0;
+    margin: 1em;
+}
+.error-box {
+    background-color: rgba(0, 0, 0, 0.952);
+    border-radius: 15px;
+    display: flex;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 5555;
+}
+.error-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0.5em 0.5em;
+    padding: 0.6em;
+    background-color: rgba(0, 0, 0, 0.952);
+    border-radius: 8px;
+    color: red;
+    cursor: pointer;
+    border: 1px white solid;
+}
+.error-btn:hover {
+    background-color: rgba(116, 110, 110, 0.152);
+}
 .contact-form label {
     display: block;
     margin-bottom: 5px;
@@ -143,6 +184,9 @@ textarea {
     .contact-form input,
     .contact-form textarea {
         width: 15rem;
+    }
+    .error-container {
+        width: 70%;
     }
 }
 
@@ -168,5 +212,8 @@ textarea {
     }
     textarea {
         max-height: 700px;
+    }
+    .error-container {
+        width: 90%;
     }
 }

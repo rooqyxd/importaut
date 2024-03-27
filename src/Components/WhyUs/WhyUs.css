@@ -36,13 +36,12 @@
     margin-top: 1em;
 }
 .topbar {
-    width: 70%;
+    width: 70vw;
     height: 2px;
-    /* background-color: #284468; */
     background-color: #cc6f5e;
     margin: 2em auto 2em;
 }
-.whyus-title{
+.whyus-title {
     margin-top: 2em;
 }
 @media screen and (max-width: 1250px) {
