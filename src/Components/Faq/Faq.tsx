@@ -58,8 +58,8 @@ const Faq = () => {
             <div className="faq-wrapper" id="services">
                 <div className="faq-container">
                     <div>
+                        <h1 className="faq-title">Najcześciej zadawane pytania</h1>
                         <div className="accordion">
-                            <h1 className="faq-title">Najcześciej zadawane pytania</h1>
                             {faqs.map((el, i) => {
                                 const isOpen = i === curOpen;
                                 return (

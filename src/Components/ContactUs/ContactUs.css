@@ -15,7 +15,7 @@
     visibility: hidden;
 }
 .contact-title {
-    margin: 1em auto 1em;
+    margin: 1.5em auto 1em;
     font-family: "CedarvilleCursive", sans-serif;
     color: #284468;
     font-size: 3rem;
@@ -131,7 +131,7 @@ textarea {
     transform: translate(-50%, -50%);
     z-index: 5555;
 
-    width: 60%;
+    width: 40%;
 }
 .error-msg {
     position: relative;

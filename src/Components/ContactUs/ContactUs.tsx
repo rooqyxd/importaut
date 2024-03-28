@@ -19,7 +19,7 @@ const ContactUs = () => {
             const formElement = form.current;
             emailjs
                 .sendForm(serviceId, templateId, formElement, {
-                    publicKey: "P-gg3DWEMHASUstyf",
+                    publicKey: "P-gg3DWEMHASUstyfXDDD",
                 })
                 .then(
                     () => {
@@ -39,7 +39,7 @@ const ContactUs = () => {
                         );
                         setTimeout(() => {
                             setErrorMsg("");
-                        }, 5000);
+                        }, 7000);
                     },
                 );
         }
