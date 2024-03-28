@@ -19,7 +19,7 @@ const ContactUs = () => {
             const formElement = form.current;
             emailjs
                 .sendForm(serviceId, templateId, formElement, {
-                    publicKey: "P-gg3DWEMHASUstyfXDDD",
+                    publicKey: "P-gg3DWEMHASUstyf",
                 })
                 .then(
                     () => {
